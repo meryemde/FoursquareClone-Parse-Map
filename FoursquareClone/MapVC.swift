@@ -86,7 +86,7 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate{
                 alert.addAction(okButton)
                 self.present(alert, animated: true, completion: nil)
             } else {
-                self.performSegue(withIdentifier: "fromMapVCtoPlacesVC", sender: nil)
+                self.performSegue(withIdentifier: "fromMaptoPlaces", sender: nil)
             }
         }
     }

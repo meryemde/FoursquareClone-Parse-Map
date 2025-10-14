@@ -77,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tEM-H3-Cke">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -107,7 +107,7 @@
             <objects>
                 <viewController id="BKZ-df-zzv" customClass="DetailsVC" customModule="FoursquareClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oAZ-gG-b2w">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I8w-uZ-wgp">
@@ -162,7 +162,7 @@
             <objects>
                 <viewController id="h1A-3E-QLf" customClass="AddPlacesVC" customModule="FoursquareClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0n6-Zm-vGR">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="place name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Iq-2r-wVb">
@@ -204,7 +204,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select.png" translatesAutoresizingMaskIntoConstraints="NO" id="zRQ-fN-dUa">
-                                <rect key="frame" x="68" y="289" width="257" height="298"/>
+                                <rect key="frame" x="68" y="333" width="257" height="289"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ctC-Dc-pHJ"/>
@@ -267,7 +267,7 @@
                     <navigationItem key="navigationItem" id="6bw-qq-K5c"/>
                     <connections>
                         <outlet property="mapView" destination="OJJ-ce-m9L" id="Est-cS-fYG"/>
-                        <segue destination="1MY-ZB-SMD" kind="presentation" identifier="fromMapVCtoPlacesVc" modalPresentationStyle="fullScreen" id="hE4-pg-IXk"/>
+                        <segue destination="0Ut-57-qAB" kind="presentation" identifier="fromMaptoPlaces" modalPresentationStyle="fullScreen" id="DNJ-Mx-0A5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XHS-7f-8dZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -279,6 +279,7 @@
             <objects>
                 <navigationController storyboardIdentifier="navigationController" automaticallyAdjustsScrollViewInsets="NO" id="0Ut-57-qAB" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="NKx-i3-1Xu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ykl-M8-Z6U">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -313,7 +314,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hE4-pg-IXk"/>
+        <segue reference="DNJ-Mx-0A5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="select.png" width="264" height="300"/>
